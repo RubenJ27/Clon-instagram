@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 /*Colors general*/
@@ -95,13 +96,13 @@ body{
 .nav__container__element2__form__elements .nav__container__element2__form__element-1{
     margin-right: 12px;
     width: 16px;
-    height: 16px;
 }
 .nav__container__element2__form__element-1 a > i{
-  color: var(--color-grey-search-icon);
+    color: var(--color-grey-search-icon);
 }
 .nav__container__element2__form__elements .nav__container__element2__form__element-1-text{
     font-weight: lighter;
+    line-height: 25px;
     color: var(--color-grey-text);
   }
 .nav__container__element3{
@@ -110,10 +111,7 @@ body{
     align-items: center;
     align-content: center;
     justify-content: flex-end;
-    -webkit-box-flex: 1;
--webkit-flex: 1 0 127px;
--ms-flex: 1 0 127px;
-flex: 1 0 127px;
+    flex: 1 0 127px;
 }
 .nav__container__element3 > .nav__container__element3__icons{
     display: flex;
@@ -149,4 +147,26 @@ flex: 1 0 127px;
 .nav__container__element1__img,
 .nav__container__element1__img__item{
 display: flex;
+}
+/*main-container*/
+
+.main__container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px 0;
+    flex-grow: 1;
+    margin: 0 auto 30px;
+    margin-bottom: 30px;
+    max-width: 935px;
+}
+/*Header*/
+
+.main__container__header{
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.main__container__header__element__img span > img{
+    border-radius: 70%;
 }
