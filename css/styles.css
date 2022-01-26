@@ -6,9 +6,13 @@
 
 /*Colors general*/
 :root{
-    --color-grey-profile: #fafafa;
-    --color-grey-search: #A8A6A9;
+    --color-grey-profile: #ffffff;
+    --color-grey-search-background: #efefef;
+    --color-grey-search-icon: rgba(142, 142, 142, 142);
     --color-grey-border: #dbdbdb;
+    --color-grey-text: rgba(142, 142, 142, 142);   
+    --color-grey-icons: #262626;   
+    --color-red-nav: #ed4956; 
 }
 
 /*General styles*/
@@ -17,11 +21,132 @@ body{
   background-color: var(--color-grey-profile);
 }
 
+/*Nav-bar*/
 .nav{
     display: flex;
-    border-bottom: 1px solid var(--color-grey-border);
+    position: relative;
+    justify-content: center;
+    padding: 0;
 }
 
 .nav__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
     height: 60px;
+    border-bottom: 1px solid var(--color-grey-border);
+}
+
+.nav__container__elements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 975px;
+    z-index: 10;
+}
+.nav__container__elements > .nav__container__element1{
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 127px;
+        -ms-flex: 1 0 127px;
+        flex: 1 0 127px;
+}
+.nav__container__elements .nav__container__element1 > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav__container__element1__img .nav__container__element1__img__item > img{
+    flex-direction: row;
+    margin-top: 7px;
+}
+.nav__container__element2{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    min-width: 125px;
+    width: 268px;
+    border-radius: 8px;
+    background: var(--color-grey-search-background);
+    color:  var(--color-grey-icons);
+}
+.nav__container__element2 .nav__container__element2__form{
+    display: flex;
+    font-size: 16px;
+    padding: 0 16px;
+    width: 100%;
+    z-index: 2;
+}
+.nav__container__element2__form > .nav__container__element2__form__elements{
+    align-items: center;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.nav__container__element2__form__elements .nav__container__element2__form__element-1{
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+}
+.nav__container__element2__form__element-1 a > i{
+  color: var(--color-grey-search-icon);
+}
+.nav__container__element2__form__elements .nav__container__element2__form__element-1-text{
+    font-weight: lighter;
+    color: var(--color-grey-text);
+  }
+.nav__container__element3{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+-webkit-flex: 1 0 127px;
+-ms-flex: 1 0 127px;
+flex: 1 0 127px;
+}
+.nav__container__element3 > .nav__container__element3__icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    white-space: nowrap;
+}
+
+.nav__container__element3__icon a > .nav__container__element3__img{
+    width: 24px;
+    height: 24px;
+    border-radius: 80%;
+    cursor: pointer;
+
+}
+  
+.nav__container__element3__icon:first-child{
+    width: 24px;
+    height: 24px;
+}
+
+.nav__container__element3__icon a > i:first-child{
+    color: var(--color-grey-icons);
+    font-size: 24px;
+}
+.nav__container__element3__icon:not(:first-child){
+    margin-left: 22px;
+}
+
+.nav__container__element1,
+.nav__container__element2,
+.nav__container__element3,
+.nav__container__element1__img,
+.nav__container__element1__img__item{
+display: flex;
 }
