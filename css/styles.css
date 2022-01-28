@@ -5,7 +5,7 @@
     font-family: "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-/*Colors general*/
+/*Colors-general*/
 :root{
     --color--gre-background: #FAFAFA;
     --color-grey-profile: #ffffff;
@@ -14,10 +14,11 @@
     --color-grey-border: #dbdbdb;
     --color-grey-text: rgb(142, 142, 142, 142);   
     --color-grey-icons: #262626;   
-    --color-red-nav: #ed4956; 
+    --color-profile-text: #00376b;
+    --color-profile-friend-text: #8E8E8E;
 }
 
-/*General styles*/
+/*General-styles*/
 
 body{
   background-color: var(--color--gre-background);
@@ -206,6 +207,7 @@ order: 4;
 
 .main__container__header__info{
     display: flex;
+    flex-direction: column;
     -webkit-flex-basis: 30px;
     -ms-flex-preferred-size: 30px;
     flex-basis: 30px;
@@ -349,3 +351,62 @@ order: 4;
     border: 0px solid transparent;
     cursor: pointer;
 }
+.main__container__header__info__items-2{
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.main__container__header__list__items-1{
+    font-size: 16px;
+    margin-right: 40px;
+}
+.header__list__plublicat__item-1--modifier{
+    font-weight: 600;
+    color: var(--color-grey-icons);
+}
+
+.main__container__header__list__items-2{
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.main__container__header__info__profile__items-3{
+    font-size: 16px;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.main__container__header__info__shop{
+    color: var(--color-profile-text);
+    text-decoration: none;
+}
+.header__info__profile__items-3__tittle{
+    display: inline;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.header__info__profile__items-3__page{
+    display: block;
+    font-weight: 600;
+    color: var(--color-profile-text);
+    text-decoration: none;
+}
+
+.header__info__profile__items-3__follow{
+    text-decoration: none;
+}
+.header__info__profile__items-3__friends{
+    color: var(--color-profile-friend-text);
+    text-decoration: none;
+}
+.header__info__profile__items-3__friends__list{
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 14px;
+}
+
+.header__info__profile__items-3__friends__item1{
+    color: var(--color-grey-icons);
+}
+
