@@ -16,6 +16,7 @@
     --color-grey-icons: #262626;   
     --color-profile-text: #00376b;
     --color-profile-friend-text: #8E8E8E;
+    --color-background-img: rgba(0,0,0,0.3);
 }
 
 /*General-styles*/
@@ -523,5 +524,80 @@ text-align: center;
 }
 .container__tablist__item-1__text--modifier{
     color: var(--color-grey-icons);
+}
+
+/*gallery*/
+.main__container__gallery__items-1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+}
+
+.main__container__gallery__item__img{
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.main__container__gallery__item{
+    width: 293px;
+    height: 293px;
+}
+.main__container__gallery__item--modifier{
+    margin-right: 28px;
+}
+.main__container__gallery__item__hover{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.main__container__gallery__item--modifier:last-child{
+    margin-right: 0px;
+}
+.gallery__item__img__background{
+    background: rgba(0,0,0,0.3) none repeat scroll 0% 0%; 
+    position: absolute; 
+    width: 293px; 
+    height: 293px; 
+    opacity: 0;
+}
+.gallery__item__img__background:hover{
+    transition: all 0.1s;
+    opacity: 1;
+}
+
+.gallery__item__img__background__items{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.gallery__item__img__background__item{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.coreSpriteHeartSmall{
+    background-position: -340px -333px;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    height: 19px;
+    width: 19px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+}
+.coreSpriteSpeechBubbleSmall{
+    background-position: -382px -333px;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    height: 19px;
+    width: 19px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
 }
 
